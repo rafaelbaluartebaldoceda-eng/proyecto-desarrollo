@@ -1,51 +1,117 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Megamenú Rayotec</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repasa Dominguino | Apoyo Escolar</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Componente aislado: reemplaza los href de ejemplo por las URL reales de WordPress. -->
-  <div class="rayotec-mega" data-rayotec-mega>
-    <button class="rayotec-mega__trigger" type="button" aria-expanded="false" aria-controls="rayotec-mega-panel">
-      <span class="rayotec-mega__hamburger" aria-hidden="true"><i></i><i></i><i></i></span>
-      <span>Categorías</span>
-      <svg class="rayotec-mega__chevron" viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg>
-    </button>
+  <main class="app">
+    <section class="login-screen" id="loginScreen">
+      <header class="topbar" aria-label="Encabezado">
+        <a class="brand" href="#" aria-label="Repasa Dominguino">
+          <span class="brand-mark"></span>
+          <span>REPASA DOMINGUINO</span>
+        </a>
+        <span class="topbar-link">LOGIN</span>
+      </header>
 
-    <nav class="rayotec-mega__panel" id="rayotec-mega-panel" aria-label="Categorías de productos" hidden>
-      <div class="rayotec-mega__columns">
-        <div class="rayotec-mega__components" aria-label="Componentes">
-          <div class="rayotec-mega__column-title rayotec-mega__components-title"><span>01</span><h3>Componentes</h3></div>
-          <a class="rayotec-mega__view-all rayotec-mega__components-all" href="/componentes-computadora-gamer/">Ver todos los componentes <span>→</span></a>
-          <section class="rayotec-mega__component-part" aria-label="Componentes principales">
-            <div class="rayotec-mega__group"><h4><a href="/product-category/procesadores/">Procesadores</a></h4><a href="/product-category/procesadores/amd-ryzen/">AMD Ryzen</a><a href="/product-category/procesadores/intel/">Intel Core</a></div>
-            <div class="rayotec-mega__group"><h4><a href="/product-category/placa-base/">Placas madre</a></h4><a href="/product-category/placa-base/placas-ryzen/">Placas Ryzen</a><a href="/product-category/placa-base/placas-intel/">Placas Intel</a></div>
-            <div class="rayotec-mega__group"><h4><a href="/product-category/memorias-ram/">Memorias RAM</a></h4><a href="/product-category/memorias-ram/ddr4/">RAM DDR4</a><a href="/product-category/memorias-ram/ddr5/">RAM DDR5</a></div>
-            <div class="rayotec-mega__group"><h4><a href="/product-category/almacenamiento-ssd-hdd/">Almacenamiento</a></h4><a href="/product-category/almacenamiento/ssd-sata/">SSD SATA</a><a href="/product-category/almacenamiento/ssd-nvme/">SSD NVMe</a></div>
-            <div class="rayotec-mega__group"><h4><a href="/product-category/tarjetas-graficas/">Tarjetas gráficas</a></h4><a href="/product-category/tarjetas-graficas/">AMD/NVIDIA</a></div>
-          </section>
-          <section class="rayotec-mega__component-part" aria-label="Más componentes y equipos">
-            <div class="rayotec-mega__group"><h4><a href="/product-category/fuentes-de-poder/">Fuentes de poder</a></h4><a href="/product-category/fuentes-de-poder/">Ver fuentes de poder</a></div>
-            <div class="rayotec-mega__group"><h4><a href="/product-category/case/">Case (Gabinete)</a></h4><a href="/product-category/case/con-fuente/">Case con fuente</a><a href="/product-category/case/sin-fuente/">Case sin fuente</a></div>
-            <div class="rayotec-mega__group"><h4><a href="/product-category/cooler-refrigeracion/">Cooler refrigeración</a></h4><a href="/product-category/cooler-refrigeracion/disipador/">Disipador de torre</a><a href="/product-category/cooler-refrigeracion/liquida/">Enfriamiento líquido</a><a href="/product-category/cooler-refrigeracion/ventiladores/">Ventiladores · pasta térmica</a></div>
-            <div class="rayotec-mega__group"><h4><a href="/pc-gamer-juegos-streaming/">PC armadas</a></h4><a href="/pc-gamer-juegos-streaming/">PC Gamer</a><a href="/pc-productividad-trabajo-exigente/">PC Productividad</a><a href="/pc-completa/">PC Completas</a></div>
-          </section>
+      <div class="login-layout">
+        <div class="login-copy">
+          <p class="section-label">Plataforma escolar</p>
+          <h1><span>Organiza</span> tus cursos y estudia con claridad</h1>
+          <p class="intro">
+            Ingresa tus datos para preparar una vista de apoyo segun tu grado,
+            colegio y cursos base de secundaria.
+          </p>
         </div>
 
-        <section class="rayotec-mega__accessories" aria-labelledby="rayotec-accessories-title">
-          <div class="rayotec-mega__column-title"><span>02</span><h3 id="rayotec-accessories-title">Accesorios</h3></div>
-          <a class="rayotec-mega__view-all" href="/product-category/accesorio/">Ver todos los accesorios <span>→</span></a>
-          <div class="rayotec-mega__group"><h4><a href="/audifonos-teclados-mouse/">Periféricos</a></h4><a href="/audifonos-teclados-mouse/">Audífonos</a><a href="/product-category/mouse-teclados/mouse/">Mouse</a><a href="/product-category/mouse-teclados/teclados/">Teclados</a><a href="/product-category/mouse-teclados/kits/">Kits</a></div>
-          <div class="rayotec-mega__group"><h4><a href="/product-category/accesorio/cables/">Cables, adaptadores y redes</a></h4><a href="/product-category/accesorio/cables/">HDMI · DisplayPort</a><a href="/product-category/accesorio/adaptadores/">Adaptadores</a><a href="/product-category/accesorio/redes/">Redes y conectividad</a><a href="/product-category/accesorio/estabilizadores/">Estabilizadores y UPS</a></div>
-          <div class="rayotec-mega__group"><h4><a href="/product-category/accesorio/audio/">Audio y streaming</a></h4><a href="/product-category/accesorio/microfonos/">Micrófonos</a><a href="/product-category/accesorio/parlantes/">Parlantes</a><a href="/product-category/accesorio/webcams/">Webcams</a></div>
-          <div class="rayotec-mega__group"><h4><a href="/product-category/accesorio/">Complementos</a></h4><a href="/product-category/accesorio/mousepad/">Mousepads</a><a href="/product-category/accesorio/soportes/">Soportes y organización</a></div>
-        </section>
+        <form id="loginForm" class="login-card" novalidate>
+          <div class="field">
+            <label for="studentName">Nombre del estudiante</label>
+            <input id="studentName" name="studentName" type="text" placeholder="Ej. Ana Torres">
+          </div>
+
+          <div class="field">
+            <label for="studentGrade">Grado</label>
+            <select id="studentGrade" name="studentGrade">
+              <option value="">Selecciona tu grado</option>
+              <option value="1">1ro de secundaria</option>
+              <option value="2">2do de secundaria</option>
+              <option value="3">3ro de secundaria</option>
+              <option value="4">4to de secundaria</option>
+              <option value="5">5to de secundaria</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="studentSchool">Colegio</label>
+            <input id="studentSchool" name="studentSchool" type="text" placeholder="Ej. I.E. San Martin">
+          </div>
+
+          <p class="form-message" id="formMessage" aria-live="polite"></p>
+          <button type="submit" class="primary-button">INGRESAR AL PANEL</button>
+        </form>
       </div>
-    </nav>
-  </div>
+
+      <p class="login-note">Maqueta local sin base de datos. La informacion se genera dentro del codigo.</p>
+    </section>
+
+    <section class="dashboard hidden" id="dashboard">
+      <header class="topbar dashboard-topbar" aria-label="Encabezado del panel">
+        <a class="brand" href="#" aria-label="Repasa Dominguino">
+          <span class="brand-mark"></span>
+          <span>REPASA DOMINGUINO</span>
+        </a>
+        <button type="button" class="secondary-button" id="changeStudentButton">
+          Cambiar estudiante
+        </button>
+      </header>
+
+      <section class="dashboard-hero">
+        <div>
+          <p class="section-label">Panel del estudiante</p>
+          <h1 id="welcomeTitle">Bienvenido</h1>
+          <p id="studentSummary" class="student-summary"></p>
+        </div>
+        <div class="hero-stats" aria-label="Resumen de cursos">
+          <div>
+            <strong>6</strong>
+            <span>Cursos</span>
+          </div>
+          <div>
+            <strong>18</strong>
+            <span>Temas</span>
+          </div>
+          <div>
+            <strong>3</strong>
+            <span>Recursos por tema</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-grid" aria-label="Cursos disponibles">
+        <aside class="course-panel">
+          <div class="panel-heading">
+            <p class="section-label">Malla inicial</p>
+            <h2>Cursos disponibles</h2>
+            <p>Selecciona un curso para revisar temas y recursos de practica.</p>
+          </div>
+          <div class="course-list" id="courseList"></div>
+        </aside>
+
+        <article class="detail-panel" id="courseDetail">
+          <div class="empty-state">
+            <span class="empty-icon">+</span>
+            <h2>Elige un curso</h2>
+            <p>Aqui apareceran los temas y recursos de practica.</p>
+          </div>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
